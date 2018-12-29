@@ -122,6 +122,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# full path to directory containing uploaded files
+# for performance reasons, we specify this directory instead of 
+# storing the files in a database.
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+# Note as well, that the way we use "static files"
+# (serve images uploaded by users) is different for 
+# development and for deployment.
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home'
