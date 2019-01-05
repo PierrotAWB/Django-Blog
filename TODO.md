@@ -2,3 +2,4 @@
 - Add comment functionality
 - Implement a "store" application
 - Deploy
+- Should a logged in user be able to register an account?
