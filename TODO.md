@@ -1,0 +1,3 @@
+- Prevent users from registering with an email which is already in use
+- Add comment functionality
+- Implement a "store" application
