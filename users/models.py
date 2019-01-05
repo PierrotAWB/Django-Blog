@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
 
+User._meta.get_field('email')._unique = True
+
 # create a one-to-one relationship
 # between users and their profile pictures
 class Profile(models.Model):
